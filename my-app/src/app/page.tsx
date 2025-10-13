@@ -13,16 +13,16 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <GridPattern
-          width={30}
-          height={30}
-          x={-1}
-          y={-1}
-          strokeDasharray="4 2"
-          className={cn(
-            "fixed inset-0 fill-gray-300/20 stroke-gray-400/20",
-            "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
-          )}
-        />
+        width={30}
+        height={30}
+        x={-1}
+        y={-1}
+        strokeDasharray="4 2"
+        className={cn(
+          "fixed inset-0 fill-gray-300/20 stroke-gray-400/20",
+          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
+        )}
+      />
       <Navbar />
       <div className="mx-auto flex max-w-3xl flex-col px-8">
         <main className="grow">
@@ -31,22 +31,10 @@ export default function Home() {
             <section className="flex flex-col items-start gap-8 md:flex-row-reverse md:items-center md:justify-between">
               {/* Profile Images */}
               <div className="relative grid h-[233px] w-[175px] place-items-center md:mr-8">
-                <img 
-                  src={DATA.personal.profileImages.tertiary} 
-                  alt="Ted 2019" 
-                  className="absolute h-[233px] w-[175px] origin-bottom rounded-lg bg-white object-cover hover:cursor-grab active:cursor-grabbing" 
-                  style={{gridArea: "1 / 1", opacity: 1, transform: "scale(0.98) rotate(6deg)"}}
-                />
-                <img 
-                  src={DATA.personal.profileImages.secondary} 
-                  alt="Ted 2024" 
-                  className="absolute h-[233px] w-[175px] origin-bottom rounded-lg bg-white object-cover hover:cursor-grab active:cursor-grabbing" 
-                  style={{gridArea: "1 / 1", opacity: 1, transform: "scale(0.98) rotate(-6deg)"}}
-                />
-                <img 
-                  src={DATA.personal.profileImages.main} 
-                  alt="Ted" 
-                  className="absolute h-[233px] w-[175px] origin-bottom rounded-lg bg-white object-cover hover:cursor-grab active:cursor-grabbing" 
+                <img
+                  src={DATA.personal.profileImages.main}
+                  alt="Ted"
+                  className="absolute h-[233px] w-[175px] origin-bottom rounded-lg bg-white object-cover hover:cursor-grab active:cursor-grabbing"
                   draggable={false}
                   style={{
                     gridRow: 1,
@@ -61,14 +49,14 @@ export default function Home() {
                   }}
                 />
               </div>
-              
+
               {/* Hero Content */}
               <div className="flex max-w-[320px] flex-col sm:max-w-full">
                 <h1 className="title text-balance text-4xl sm:text-5xl">hi {DATA.personal.name} here. 👋</h1>
                 <p className="mt-2 whitespace-nowrap text-sm font-medium sm:text-base">{DATA.personal.age}yo {DATA.personal.title.toLowerCase()} from {DATA.personal.location}</p>
                 <p className="mt-4 max-w-sm text-balance text-sm sm:text-base">{DATA.personal.bio}</p>
-                
-                <div className="mt-6 flex items-center gap-1">
+
+                {/* <div className="mt-6 flex items-center gap-1">
                   <p className="text-balance text-sm font-semibold sm:text-base">{DATA.tedSupport.message}</p>
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-down-right hidden size-5 animate-bounce sm:block">
                     <path d="m7 7 10 10"></path>
@@ -78,14 +66,14 @@ export default function Home() {
                     <path d="M12 5v14"></path>
                     <path d="m19 12-7 7-7-7"></path>
                   </svg>
-                </div>
-                
-                <p className="mt-1 text-xs font-light">{DATA.tedSupport.escalation}<a target="_blank" className="link font-semibold" title={DATA.tedSupport.tedLead.title} href={DATA.tedSupport.tedLead.url}>&nbsp;{DATA.tedSupport.tedLead.name}&nbsp;</a>instead.</p>
-                
+                </div> */}
+
+                {/* <p className="mt-1 text-xs font-light">{DATA.tedSupport.escalation}<a target="_blank" className="link font-semibold" title={DATA.tedSupport.tedLead.title} href={DATA.tedSupport.tedLead.url}>&nbsp;{DATA.tedSupport.tedLead.name}&nbsp;</a>instead.</p> */}
+
                 {/* Action Buttons */}
                 <section className="mt-6 flex flex-wrap items-center gap-4">
                   <a target="_blank" href={DATA.resume.url}>
-                    <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2">
+                    <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border border-input bg-background shadow-sm hover:text-accent-foreground h-9 px-4 py-2">
                       <span className="font-semibold">{DATA.resume.downloadText}</span>
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-file-down ml-2 size-5">
                         <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
@@ -95,7 +83,7 @@ export default function Home() {
                       </svg>
                     </button>
                   </a>
-                  
+
                   <section className="flex gap-6">
                     {DATA.socialLinks.map((link) => (
                       <a key={link.name} href={link.url} target="_blank" className="text-muted-foreground hover:text-foreground" rel="noopener noreferrer" title={link.name}>
@@ -129,28 +117,26 @@ export default function Home() {
             {/* Work/Education Tabs */}
             <div className="space-y-4">
               <div className="h-9 items-center justify-center rounded-lg bg-muted p-1 text-muted-foreground mb-2 grid w-full grid-cols-2">
-                <button 
+                <button
                   onClick={() => setActiveTab("work")}
-                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${
-                    activeTab === "work" 
-                      ? "bg-background text-foreground shadow" 
+                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${activeTab === "work"
+                      ? "bg-background text-foreground shadow"
                       : "hover:bg-muted/50"
-                  }`}
+                    }`}
                 >
                   Work
                 </button>
-                <button 
+                <button
                   onClick={() => setActiveTab("education")}
-                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${
-                    activeTab === "education" 
-                      ? "bg-background text-foreground shadow" 
+                  className={`inline-flex items-center justify-center whitespace-nowrap rounded-md px-3 py-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 ${activeTab === "education"
+                      ? "bg-background text-foreground shadow"
                       : "hover:bg-muted/50"
-                  }`}
+                    }`}
                 >
                   Education
                 </button>
               </div>
-              
+
               {/* Tab Content */}
               {activeTab === "work" && (
                 <div className="rounded-xl border bg-card text-card-foreground shadow">
@@ -226,7 +212,10 @@ export default function Home() {
                           {edu.projects && edu.projects.length > 0 && (
                             <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
                               {edu.projects.map((project) => (
-                                <a key={project.name} href={project.url}>
+                                <a key={project.name} href={project.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                >
                                   <div className="items-center rounded-md border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2" title={project.name}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-globe size-3" aria-hidden="true">
                                       <circle cx="12" cy="12" r="10"></circle>
@@ -259,7 +248,7 @@ export default function Home() {
                   </svg>
                 </a>
               </div>
-              
+
               <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {DATA.featuredProjects.map((project) => (
                   <div key={project.id} className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
@@ -336,7 +325,7 @@ export default function Home() {
                   </svg>
                 </a>
               </div>
-              
+
               <div className="rounded-xl border bg-card text-card-foreground shadow overflow-hidden">
                 <ul className="divide-y divide-border">
                   {DATA.recentPosts.map((post) => (
@@ -389,7 +378,7 @@ export default function Home() {
           </article>
         </main>
       </div>
-      
+
       {/* Footer */}
       <footer className="w-full pt-12">
         <div className="mx-auto flex max-w-3xl flex-col items-center justify-center px-8 pb-32 sm:flex-row-reverse sm:justify-between">
