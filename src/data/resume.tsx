@@ -1,7 +1,3 @@
-import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
-import profile from "../../public/images/photo.jpg";
-
 export interface WorkExperience {
   id: string;
   company: string;
