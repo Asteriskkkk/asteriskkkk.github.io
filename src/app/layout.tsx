@@ -4,10 +4,6 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/libs/utils";
 import { GridPattern } from "@/components/ui/grid-pattern";
-import { Home, Search, Settings } from "lucide-react"  // optional icons
-import { Navbar } from "@/components/navbar";
-
-
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

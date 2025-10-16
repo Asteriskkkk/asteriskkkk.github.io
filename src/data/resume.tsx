@@ -124,7 +124,7 @@ export const DATA = {
         "President of Digipen Student Management Committee for freshman year",
         "3-time recipient of the Dean's Honor List"
       ],
-      logo: "images/DYPDPULogo.jpg",
+      logo: "/images/DYPDPULogo.jpg",
       website: "https://engg.dypvp.edu.in/",
       // achievements: [
       //   "Dean's Honor List (3 times)",
