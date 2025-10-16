@@ -11,7 +11,6 @@ export const metadata: Metadata = {
 };
 
 export default function Projects({
-  children,
 }: {
   children: React.ReactNode;
 }) {
