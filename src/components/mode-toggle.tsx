@@ -35,8 +35,8 @@ export function ModeToggle() {
       size="icon"
       className="px-2 relative"
       onClick={() => {
-        console.log("Current theme:", theme);
-        setTheme(theme === "dark" ? "light" : "dark");
+        const nextTheme = theme === "dark" ? "light" : "dark";
+        setTheme(nextTheme);
       }}
     >
       <MoonIcon className={`h-[1.2rem] w-[1.2rem] transition-all duration-200 ${
