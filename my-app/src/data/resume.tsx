@@ -139,7 +139,7 @@ export const DATA = {
       // ]
     },
     {
-      id: "sp-diploma",
+      id: "gpp-diploma",
       institution: "Government Polytechnic Pune",
       degree: "Diploma in Computer Engineering",
       duration: "Apr 2021 - May 2024",
@@ -161,18 +161,40 @@ export const DATA = {
   featuredProjects: [
     {
       id: "tt4d",
-      name: "TT4D",
-      description: "Generate winning combinations, view past results, and analyze lottery trends all in one place",
-      image: "/img/tt4d.png",
-      technologies: ["BS4", "Docker", "FastAPI", "Fly.io", "NextJS", "PostgreSQL", "Python", "TailwindCSS"],
+      name: "Wipeable",
+      description: "A secure, verifiable, and user-friendly data wiping system that ensures data is permanently erased and assets are ready for safe recycling or resale.",
+      image: "/images/wipeable.png",
+      technologies: ["NextJs", "Shadcn/UI", "Tailwind CSS", "Electron.js", "Node.js", "PostgreSQL"],
       links: {
-        website: "https://huatnumbers.com",
-        github: "https://github.com/tedawf/tt4d",
-        githubUI: "https://github.com/tedawf/tt4d-web"
+        // website: "https://www.youtube.com/watch?v=XgQXBnKsUyw",
+        github: "https://github.com/Tejas-Santosh-Nalawade/Wipeable-Desktop-App",
+        // githubUI: "https://github.com/tedawf/tt4d-web"
       }
     },
     {
       id: "tv-telegram-alerts",
+      name: "Tradingview Telegram Alerts",
+      description: "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
+      image: "/img/tv-tele-alerts.png",
+      technologies: ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
+      links: {
+        github: "https://github.com/tedawf/tradingview-telegram-alerts"
+      }
+    },
+    {
+      id: "ttd",
+      name: "Wipeable",
+      description: "A secure, verifiable, and user-friendly data wiping system that ensures data is permanently erased and assets are ready for safe recycling or resale.",
+      image: "/images/wipeable.png",
+      technologies: ["NextJs", "Shadcn/UI", "Tailwind CSS", "Electron.js", "Node.js", "PostgreSQL"],
+      links: {
+        // website: "https://www.youtube.com/watch?v=XgQXBnKsUyw",
+        github: "https://github.com/Tejas-Santosh-Nalawade/Wipeable-Desktop-App",
+        // githubUI: "https://github.com/tedawf/tt4d-web"
+      }
+    },
+    {
+      id: "tv-telegram-alert",
       name: "Tradingview Telegram Alerts",
       description: "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
       image: "/img/tv-tele-alerts.png",

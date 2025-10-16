@@ -15,12 +15,12 @@ export function Navbar() {
             <li className="link">
               <Link href="/projects">projects</Link>
             </li>
-            <li className="link">
+            {/* <li className="link">
               <Link href="/blog">blog</Link>
-            </li>
-            <li className="link">
+            </li> */}
+            {/* <li className="link">
               <Link href="/contact">contact</Link>
-            </li>
+            </li> */}
           </ul>
           <div className="flex gap-2 sm:gap-4">
             <ModeToggle />

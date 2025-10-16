@@ -12,17 +12,6 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("work");
   return (
     <div className="min-h-screen bg-background">
-      <GridPattern
-        width={30}
-        height={30}
-        x={-1}
-        y={-1}
-        strokeDasharray="4 2"
-        className={cn(
-          "fixed inset-0 fill-gray-300/20 stroke-gray-400/20",
-          "[mask-image:radial-gradient(1000px_circle_at_center,white,transparent)]"
-        )}
-      />
       <Navbar />
       <div className="mx-auto flex max-w-3xl flex-col px-8">
         <main className="grow">
@@ -250,11 +239,14 @@ export default function Home() {
               </div>
 
               <section className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {DATA.featuredProjects.map((project) => (
+                {DATA.featuredProjects.slice(0, 2).map((project) => (
                   <div key={project.id} className="rounded-xl border bg-card text-card-foreground shadow flex flex-col">
-                    <div className="flex flex-col space-y-1.5 p-6">
+                    <div className="flex flex-col space-y-1.5 relative p-6">
                       <a href={project.image}>
-                        <img alt={project.name} loading="lazy" width="500" height="300" decoding="async" className="h-40 w-full object-cover object-top" src={project.image} />
+                        <img 
+                          alt={project.name} 
+                          loading="lazy" width="500" height="300" decoding="async" 
+                          className="h-40 w-full object-cover object-top bg-white" src={project.image} />
                       </a>
                     </div>
                     <div className="p-6 pt-0 flex flex-col gap-2">
@@ -263,7 +255,7 @@ export default function Home() {
                         <p>{project.description}</p>
                       </div>
                     </div>
-                    <div className="p-6 pt-0 flex h-full flex-col items-start justify-between gap-4">
+                    <div className="p-6 pt-0 flex h-full flex-col items-start justify-between gap-4 ">
                       <div className="mt-2 flex flex-wrap gap-1">
                         {project.technologies.map((tech) => (
                           <div key={tech} className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]">
@@ -314,7 +306,7 @@ export default function Home() {
             </section>
 
             {/* Recent Posts */}
-            <section className="flex flex-col gap-8">
+            {/* <section className="flex flex-col gap-8">
               <div className="flex justify-between">
                 <h2 className="title text-3xl">recent posts</h2>
                 <a className="link flex items-center gap-2 font-light" href="/blog">
@@ -374,7 +366,7 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-            </section>
+            </section> */}
           </article>
         </main>
       </div>
@@ -409,7 +401,7 @@ export default function Home() {
             ))}
           </section>
           <section className="mt-8 text-center sm:mt-0 sm:text-left">
-            <p className="text-xs text-muted-foreground">© 2025 <a className="link" href="/">{DATA.personal.fullName.toLowerCase()}.com</a> | <a className="link font-bold" href="/privacy">privacy?</a></p>
+            <p className="text-xs text-muted-foreground">© 2025 <a className="link" href="/">{DATA.personal.fullName.toLowerCase()}.com</a></p>
           </section>
         </div>
       </footer>

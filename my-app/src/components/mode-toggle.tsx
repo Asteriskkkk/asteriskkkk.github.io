@@ -39,10 +39,10 @@ export function ModeToggle() {
         setTheme(theme === "dark" ? "light" : "dark");
       }}
     >
-      <SunIcon className={`h-[1.2rem] w-[1.2rem] transition-all duration-200 ${
+      <MoonIcon className={`h-[1.2rem] w-[1.2rem] transition-all duration-200 ${
         theme === "dark" ? "rotate-90 scale-0" : "rotate-0 scale-100"
       }`} />
-      <MoonIcon className={`absolute h-[1.2rem] w-[1.2rem] transition-all duration-200 ${
+      <SunIcon className={`absolute h-[1.2rem] w-[1.2rem] transition-all duration-200 ${
         theme === "dark" ? "rotate-0 scale-100" : "-rotate-90 scale-0"
       }`} />
       <span className="sr-only">Toggle theme</span>
