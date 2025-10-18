@@ -156,7 +156,19 @@ export const DATA = {
 
   featuredProjects: [
     {
-      id: "tt4d",
+      id: "fp-Ai-powered-placement-assistant",
+      name: "Finally Placed - AI Powered Placement Assistant",
+      description: "All-in-one Placement Prep Platform built with React, offering resume management, DSA tracking, curated resources, and AI interview feedback — everything to boost your job readiness.",
+      image: "/images/fp.png",
+      technologies: ["NextJs", "Shadcn/UI", "Tailwind CSS", "Chart.js", "Node.js", "MongoDB", "OpenAI API", "RapidAPI"],
+      links: {
+        website: "https://dev-clash-hackathon.vercel.app/",
+        github: "https://github.com/Asteriskkkk/Dev-Clash",
+        // githubUI: "https://github.com/tedawf/tt4d-web"
+      }
+    },
+    {
+      id: "wipeable",
       name: "Wipeable",
       description: "A secure, verifiable, and user-friendly data wiping system that ensures data is permanently erased and assets are ready for safe recycling or resale.",
       image: "/images/wipeable.png",
@@ -168,37 +180,15 @@ export const DATA = {
       }
     },
     {
-      id: "tv-telegram-alerts",
-      name: "Tradingview Telegram Alerts",
-      description: "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-      image: "/img/tv-tele-alerts.png",
-      technologies: ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
+      id: "🌊",
+      name: "Smart Fishing",
+      description: "A Flutter-based mobile application designed for coastal fishermen to improve fishing accuracy, ensure territorial compliance, and enhance safety using geospatial and weather intelligence.",
+      image: "/images/samudra.png",
+      technologies: ["Flutter", "Google Maps API", "Geofencing Plugin", "OpenWeatherMap API ", "Firestore", "Cron Jobs"],
       links: {
-        github: "https://github.com/tedawf/tradingview-telegram-alerts"
+        github: "https://github.com/Asteriskkkk/GDG---TamilNadhu-Fishing-App"
       }
     },
-    {
-      id: "ttd",
-      name: "Wipeable",
-      description: "A secure, verifiable, and user-friendly data wiping system that ensures data is permanently erased and assets are ready for safe recycling or resale.",
-      image: "/images/wipeable.png",
-      technologies: ["NextJs", "Shadcn/UI", "Tailwind CSS", "Electron.js", "Node.js", "PostgreSQL"],
-      links: {
-        // website: "https://www.youtube.com/watch?v=XgQXBnKsUyw",
-        github: "https://github.com/Tejas-Santosh-Nalawade/Wipeable-Desktop-App",
-        // githubUI: "https://github.com/tedawf/tt4d-web"
-      }
-    },
-    {
-      id: "tv-telegram-alert",
-      name: "Tradingview Telegram Alerts",
-      description: "Real-time trading alerts with chart snapshots sent to Telegram, designed to keep traders informed and responsive to market changes",
-      image: "/img/tv-tele-alerts.png",
-      technologies: ["Docker", "FastAPI", "Fly.io", "Python", "Selenium", "Telegram Bot API"],
-      links: {
-        github: "https://github.com/tedawf/tradingview-telegram-alerts"
-      }
-    }
   ] as Project[],
 
   recentPosts: [
