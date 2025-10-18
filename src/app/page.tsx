@@ -401,7 +401,7 @@ export default function Home() {
             ))}
           </section>
           <section className="mt-8 text-center sm:mt-0 sm:text-left">
-            <p className="text-xs text-muted-foreground">© 2025 <Link className="link" href="/">{DATA.personal.fullName.toLowerCase()}.com</Link></p>
+            <p className="text-xs text-muted-foreground">© 2025 <Link className="link" href="/">{DATA.personal.fullName}</Link></p>
           </section>
         </div>
       </footer>
