@@ -149,6 +149,19 @@ export default function Home() {
                                 <li key={index} className="prose pr-8 text-sm dark:prose-invert">{desc}</li>
                               ))}
                             </ul>
+                            {/* ✅ Add this block to show Tech Stack */}
+                            {work.technologies && work.technologies.length > 0 && (
+                              <div className="mt-2 flex flex-wrap gap-1">
+                                {work.technologies.map((tech) => (
+                                  <div
+                                    key={tech}
+                                    className="inline-flex items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80 px-1 py-0 text-[10px]"
+                                  >
+                                    {tech}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
                           </div>
                           {work.projects && work.projects.length > 0 && (
                             <div className="mt-2 flex flex-row flex-wrap items-start gap-2">
