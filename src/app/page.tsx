@@ -149,7 +149,6 @@ export default function Home() {
                                 <li key={index} className="prose pr-8 text-sm dark:prose-invert">{desc}</li>
                               ))}
                             </ul>
-                            {/* ✅ Add this block to show Tech Stack */}
                             {work.technologies && work.technologies.length > 0 && (
                               <div className="mt-2 flex flex-wrap gap-1">
                                 {work.technologies.map((tech) => (

@@ -114,15 +114,14 @@ export const DATA = {
   education: [
     {
       id: "dypit-te",
-      institution: "",
-      degree: "BS in Computer Science in Real-Time Interactive Simulation",
-      duration: "Sep 2019 - Apr 2023",
+      institution: "Dr. D. Y. Patil Institute of Technology",
+      degree: "BE in Electronics and Telecommunication Engineering",
+      duration: "Sep 2024 - Apr 2027",
       startDate: "Sep 2019",
-      endDate: "Apr 2023",
       description: [
-        "Graduated with a Minor in Mathematics",
-        "President of Digipen Student Management Committee for freshman year",
-        "3-time recipient of the Dean's Honor List"
+        "Winner of Hash-It-Out Hackathon 2024",
+        "Top-2 in SIH Internal Hackathon 2025",
+        "200+ LeetCode problems solved in C++."
       ],
       logo: "/images/DYPDPULogo.jpg",
       website: "https://engg.dypvp.edu.in/",
