@@ -234,7 +234,7 @@ export const DATA = {
   ] as SocialLink[],
 
   resume: {
-    url: "https://drive.google.com/file/d/1SUqHYnOrgzAcE3hEoBFaZrAjtd2y0OLE/view",
+    url: "https://drive.google.com/file/d/1CT-OKHh2gpaxUiFzWr8Kh0QvXgMDwg2h/view?usp=drive_link",
     downloadText: "Resume"
   },
 
